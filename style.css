@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Heebo:wght@500&family=Poppins:ital,wght@1,300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #051937, #202552, #42306b, #68377f, #923c8f);}
+
+  h1{
+      text-align: center;
+      margin-bottom: 20px;
+      color: aliceblue;
+      font-family: 'Heebo', sans-serif;
+      text-decoration: underline;
+      font-size: 35px;
+  }
+.clock {
+  display: flex;
+}
+
+.clock div {
+  position: relative;
+  margin: 0 5px;
+  width: 200px;
+  height: 240px;
+
+}
+
+.clock div p {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a3a3a3;
+  z-index: 1;
+  font-size: 80px;
+  border: none;
+  /* -webkit-box-shadow: 1px 0px 11px 6px rgba(145,242,255,0.79); 
+  box-shadow: 1px 0px 11px 6px rgba(145,242,255,0.6); */
+}
+
+.clock div p:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.clock div p:last-child {
+  font-size: 30px;
+  height: 80px;
+  background-color: #58DA78;
+  border-radius: 0 0 20px 20px;
+}
+
+.clock div:last-child p {
+  background-color: #512b58;
+  color: white;
+}
+
+.clock div:last-child p:last-child {
+  background-color: #58DA78;
+  color: white;
+}
